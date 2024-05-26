@@ -8,26 +8,37 @@
 
 body {
   font-family: "Poppins", sans-serif;
+  background: linear-gradient(to right, #6dd5ed, #2193b0);
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
 
 .container {
-  background: rgb(14, 13, 13);
-  color: #ffffff;
+  background: rgba(14, 13, 13, 0.8);
   padding: 2rem;
   width: 40%;
   margin: 4rem auto;
   border-radius: 10px;
-  box-shadow: -5px 5px 5px #0000002c;
+  box-shadow: -5px 5px 15px #0000002c;
 }
 
 .weather__header {
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.weather__search {
+  position: relative;
+  display: flex;
   align-items: center;
 }
 
-input {
+.weather__searchform {
   border: none;
   background-color: #292727;
   outline: none;
@@ -35,26 +46,22 @@ input {
   border-radius: 20px;
   color: #ffffff;
   font: inherit;
+  padding-left: 40px;
 }
 
-input::placeholder {
+.weather__searchform::placeholder {
   color: #ffffff;
 }
 
-input:hover {
-  background-color: #312d2d;
-}
-
-.weather__search {
-  position: relative;
-}
-
-.weather__search i {
+.weather__search button {
+  border: none;
+  background: none;
   position: absolute;
   left: 10px;
   top: 10px;
   font-size: 20px;
   color: white;
+  cursor: pointer;
 }
 
 .weather__units {
@@ -69,11 +76,24 @@ input:hover {
   margin-right: 0.5rem;
 }
 
+.weather__units .active {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
 .weather__body {
   text-align: center;
   margin-top: 3rem;
 }
 
+.weather__city {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+}
+
+.weather__datetime p {
+  margin-bottom: 10px;
+}
 
 .weather__forecast {
   margin-top: 2rem;
@@ -89,7 +109,8 @@ input:hover {
 }
 
 .weather__temperature {
-  font-size: 2rem;
+  font-size: 3rem;
+  margin: 10px 0;
 }
 
 .weather__minmax {
@@ -123,8 +144,7 @@ input:hover {
 
 @media (max-width: 1060px) {
   .container {
-    width: 6
-    0%;
+    width: 60%;
   }
 }
 
@@ -144,6 +164,14 @@ input:hover {
 
 @media (max-width: 400px) {
   .weather__icon {
-    grid-template-columns: none;
+    width: 80px;
+  }
+
+  .weather__temperature {
+    font-size: 2.5rem;
+  }
+
+  .weather__info {
+    grid-template-columns: 1fr;
   }
 }
