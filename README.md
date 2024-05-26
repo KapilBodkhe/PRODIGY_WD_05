@@ -9,7 +9,7 @@ Created a web page that fetches weather data from a weather API based on the use
 ![JS](https://img.shields.io/badge/javascript%20-%23323330.svg?&style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
 
 
-## 📱 Contact me💻
+## 📱 Contact me 💻
 
 Feel free to reach me through the below handles if you'd like to contact me.
 
