@@ -8,8 +8,6 @@ Created a web page that fetches weather data from a weather API based on the use
 ![CSS](https://img.shields.io/badge/css3%20-%231572B6.svg?&style=for-the-badge&logo=css3&logoColor=white)
 ![JS](https://img.shields.io/badge/javascript%20-%23323330.svg?&style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
 
-## 👀 Preview of Web page
-
 
 ## 📱 Contact me💻
 
