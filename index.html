@@ -15,19 +15,19 @@
 <body>
     <div class="container">
         <div class="weather__header">
-            <form class="weather__search"  method="get">
+            <form class="weather__search" method="get">
                 <input type="text" placeholder="Search for a city" class="weather__searchform">
-                <i class="fa-solid fa-magnifying-glass"></i>
+                <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
             </form>
             <div class="weather__units">
-                <span class="unit__celsisus">&deg;C</span>
-                <span class="unit__fharenheit">&deg;F</span>
+                <span class="unit__celsius active">&deg;C</span>
+                <span class="unit__fahrenheit">&deg;F</span>
             </div>
         </div>
         <div class="weather__body">
-            <h1 class="weather__city"></h1>
+            <h1 class="weather__city">New York</h1>
             <div class="weather__datetime">
-                <p></p>
+                <p>Monday, 10:00 AM</p>
             </div>
             <div class="weather__forecast">
                 <p>Cloudy</p>
@@ -36,7 +36,7 @@
                 <img src="https://openweathermap.org/img/wn/10d@4x.png" alt="">
             </div>
             <p class="weather__temperature">
-                18&deg
+                18&deg;
             </p>
             <div class="weather__minmax">
                 <p>Min: 12&deg;</p>
@@ -55,21 +55,21 @@
                 <i class="fa-solid fa-droplet"></i>
                 <div>
                     <p>Humidity</p>
-                    <p class="weather__humidity">18&deg;</p>
+                    <p class="weather__humidity">60%</p>
                 </div>
             </div>
             <div class="weather__card">
                 <i class="fa-solid fa-wind"></i>
                 <div>
                     <p>Wind</p>
-                    <p class="weather__wind">18&deg;</p>
+                    <p class="weather__wind">15 km/h</p>
                 </div>
             </div>
             <div class="weather__card">
                 <i class="fa-solid fa-stopwatch"></i>
                 <div>
                     <p>Pressure</p>
-                    <p class="weather__pressure">18&deg;</p>
+                    <p class="weather__pressure">1012 hPa</p>
                 </div>
             </div>
         </div>
